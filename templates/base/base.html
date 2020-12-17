@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>MUOS</title>
+        <!-- Custom styles for this template -->
+        <link href="{% static 'album.css' %}" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+    </head>
+<body>
+        <div class="container mb-auto pt-2">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 "> 
+                <a class="navbar-brand" href="#">MUOS</a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler10" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>                     
+                <div class="collapse navbar-collapse" id="navbarToggler10">
+                    <br> 
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+                        <li class="nav-item active"> 
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> 
+                        </li>                             
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#">About Us</a> 
+                        </li>                             
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>                             
+                    </ul>                         
+                    <form class="form-inline my-2 my-lg-0"> 
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> 
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>                             
+                    </form>                         
+                </div>
+            </nav>
+        </div>
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading"><b class="text-danger font-weight-bold">MU Online Stationery</b></h1>
+                <p class="lead text-muted">Mzumbe University Online Stationery Services Involve the provision of printing service accross the legally and approved stationaries for better and good printing services.</p>
+            </div>
+            <br>
+            <figcaption class="font-italic font-weight-bolder text-info">-Landing Technology Evolution in Mzumbe University-</figcaption>
+        </section> 
+        <br>
+        {% block parkistan %}
+
+        {% endblock parkistan %}
+      <footer class="text-muted">
+            <div class="container">
+                <center>
+                    © MZUMBE UNIVERSITY Online Stationery 2020.
+                    <p> </p>
+                </center>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/popper.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <script type="{% static 'text/javascript' %}" src="{% static 'pgia/lib/pgia.js' %}"></script>
+</body>
+</html>
