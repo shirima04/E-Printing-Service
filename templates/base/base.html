@@ -24,7 +24,7 @@
                     <br> 
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
                         <li class="nav-item active"> 
-                            <a class="nav-link" href="{% url 'homepage' %}">Home </a> 
+                            <a class="nav-link" href="{% url 'homepage' %}">Home <span class="sr-only sr-only-focusable">(home tab is active)</span></a> 
                         </li>                             
                         <li class="nav-item"> 
                             <a class="nav-link" href="{% url 'aboutus' %}">About Us</a> 
@@ -49,14 +49,15 @@
             <figcaption class="font-italic font-weight-bolder text-info">-Landing Technology Evolution in Mzumbe University-</figcaption>
         </section> 
         <br>
+        <!-- <div class="container"> -->
         {% block parkistan %}
 
         {% endblock parkistan %}
-      <footer class="text-muted" style="background: white; background-color: grey;">
+        <!-- </div> -->
+      <footer class="text-muted" style="background: white; background-color: #cacaca !important;">
             <div class="container">
                 <center style=" color: white;">
                     © MZUMBE UNIVERSITY Online Stationery 2020.
-                    <p> </p>
                 </center>
             </div>
         </footer>
