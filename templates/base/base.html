@@ -16,7 +16,7 @@
 <body>
         <div class="container mb-auto pt-2">
             <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 "> 
-                <a class="navbar-brand" href="#">MUOS</a> 
+                <a class="navbar-brand" href="{% url 'homepage' %}">MUOS</a> 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler10" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
                     <span class="navbar-toggler-icon"></span> 
                 </button>                     
@@ -24,13 +24,13 @@
                     <br> 
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
                         <li class="nav-item active"> 
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> 
+                            <a class="nav-link" href="{% url 'homepage' %}">Home </a> 
                         </li>                             
                         <li class="nav-item"> 
-                            <a class="nav-link" href="#">About Us</a> 
+                            <a class="nav-link" href="{% url 'aboutus' %}">About Us</a> 
                         </li>                             
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="{% url 'contactus' %}">Contact Us</a>
                         </li>                             
                     </ul>                         
                     <form class="form-inline my-2 my-lg-0"> 
@@ -52,9 +52,9 @@
         {% block parkistan %}
 
         {% endblock parkistan %}
-      <footer class="text-muted">
+      <footer class="text-muted" style="background: white; background-color: grey;">
             <div class="container">
-                <center>
+                <center style=" color: white;">
                     © MZUMBE UNIVERSITY Online Stationery 2020.
                     <p> </p>
                 </center>
