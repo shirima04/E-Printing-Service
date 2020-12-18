@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from myproject.settings import GENDER
 
 class MyUser(BaseUserManager):
     #.................Create our custom user................
@@ -62,6 +63,8 @@ class MyAccount(AbstractBaseUser):
     phone       = models.IntegerField(unique = True)
     first_name  = models.CharField(max_length = 100, blank = True, null = None)
     last_name   = models.CharField(max_length = 100, blank = True, null = None)
+    sex         = models.CharField(max_length = 10, choices = GENDER, 
+                    default = 'Male')
     date_created= models.DateTimeField(auto_now_add = True)
     last_login  = models.DateTimeField(auto_now_add = True)
     admin       = models.BooleanField(default = False)
