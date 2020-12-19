@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class PrintingService(models.Model):
-    # stationery = models.CharField(max_length=50)#create a list of stationery that display their current tasks
     tasktype = models.CharField(max_length=50)#create a list to show 1.g w/k  2.ind w/k 3. repot 4.project 5.research
     slug = models.TextField()#guides to save your documents b4 uploading
     timeframe = models.DateTimeField()#set time frame for your task
