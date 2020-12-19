@@ -11,7 +11,6 @@ class UserAdmin(admin.ModelAdmin):
 
     #customization of creation form
     fieldsets = (
-        (None, {'fields' : ('stationery_name')}),
         ('Stationery info', {'fields':('stationery_profile', 'stationery_name', 'stationery_location', 'Stationery_slug')}),
         ('Stationery services', {'fields':('Individual_Task', 'Group_Task', 'Report', 'Research', 'Paper')}),
     )
