@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.contrib.auth.models import Group
+
 # from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from account.models import MyAccount
@@ -29,15 +31,10 @@ class UserAdmin(admin.ModelAdmin):
     )
     #.............add fields set is not standard model.admin attribute..........
     #............ overrides get_fieldsets to use when creating a user...........
-    # add_fieldsets = (
-    #     (None, {
-    #         'classes': ('wide'),
-    #         'fiels': ('email', 'password1','password2')
-    #     }),
-    # )
+   
     search_fields = ('email','username', 'first_name','last_name',)
     ordering      = ('email','username',)
     filter_horizontall = ()
 admin.site.register(MyAccount, UserAdmin)
 #.........removing group model from admin we`re not using it....... 
-# admin.site.unregister(Group)
+admin.site.unregister(Group)
