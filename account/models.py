@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-from myproject.settings import GENDER
+from .choices import GENDER
 
 class MyUser(BaseUserManager):
     #.................Create our custom user................
