@@ -11,13 +11,13 @@ class UserAdmin(admin.ModelAdmin):
 
     #customization of creation form
     fieldsets = (
-        ('Stationery info', {'fields':('stationery_profile', 'stationery_name', 'stationery_location', 'Stationery_slug')}),
-        ('Stationery services', {'fields':('Individual_Task', 'Group_Task', 'Report', 'Research', 'Paper')}),
+        ('Profile', {'fields': ('stationery_profile',)}),
+        ('Stationery info', {'fields':('stationery_name', 'stationery_location', 'Stationery_slug',)}),
+        ('Stationery services', {'fields':('Individual_Task', 'Group_Task', 'Report', 'Research', 'Paper',)}),
     )
-
     #search
-    search_fealds = ('stationery_name', 'stationery_location', 'Individual_Task', 'Group_Task', 'Report', 'Research', 'Paper')
-    list_ordering = ('stationery_name')
+    search_fields = ('stationery_name', 'stationery_location', 'Individual_Task', 'Group_Task', 'Report', 'Research', 'Paper',)
+    list_ordering = ('stationery_name',)
     filter_horizontally = ()
 
 admin.site.register(Stationery, UserAdmin)
