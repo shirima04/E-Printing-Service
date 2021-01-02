@@ -1,5 +1,5 @@
 from django.db import models
-from multiselectfield import MultiSelectField
+# from multiselectfield import MultiSelectField
 
 
 class Stationery(models.Model):    
@@ -15,7 +15,3 @@ class Stationery(models.Model):
     Report                  = models.BooleanField(default = False)
     Research                = models.BooleanField(default = False)
     Paper                   = models.BooleanField(default = False)
-
-    def __str__(self):
-        return self.stationery_name
-

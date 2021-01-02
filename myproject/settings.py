@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'multiselectfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +44,8 @@ INSTALLED_APPS = [
     'account',
     'printing',
     'stationery',
-    'multiselectfield',
+    'stationery_material',
+    'payments',
 ]
 
 MIDDLEWARE = [

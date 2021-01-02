@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 
 #home page
 def home(request):
-    return render(request, 'printing/home.html', {})
+    return render(request, 'home.html', {})
 
 #about us page
 def about(request):
